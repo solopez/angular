@@ -1,5 +1,7 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { Ej9Service } from '../ej9.service';
+import { Persona } from '../persona';
 
 @Component({
   selector: 'app-ej4',
@@ -8,25 +10,14 @@ import { Component } from '@angular/core';
   styleUrl: './ej4.component.css'
 })
 export class Ej4Component {
-array= [{
-    nombre: 'Chiara',
-    edad: 28,
-    esEstudiante: true,
-  },
-  {
-   nombre: 'Juli',
-    edad: 20,
-    esEstudiante: true,
-  },
-  {
-    nombre: 'Sol',
-    edad: 30,
-    esEstudiante: false,
-  },
-  {
-    nombre: 'Sabri',
-    edad: 32,
-    esEstudiante: false,
-  }
-]
+  
+
+personas: Persona []=[];
+
+constructor(private ej9Service: Ej9Service) {}
+
+ngOnInit(): void {
+  this.personas = this.ej9Service.obtenerArray();
+}
+
 }

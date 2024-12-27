@@ -8,7 +8,7 @@ import { MovieListComponent } from "./movie-list/movie-list.component";
 import { SearchBarComponent } from "./search-bar/search-bar.component";
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, FooterComponent, MovieListComponent, SearchBarComponent],
+  imports: [HeaderComponent, FooterComponent, MovieListComponent, SearchBarComponent, Ej4Component],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
