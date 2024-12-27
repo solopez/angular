@@ -1,0 +1,16 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+p {
+  text-align: center;
+  font-size: 1.2em;
+}
+.select-movie {
+  background-color: #05533c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+}

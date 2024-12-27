@@ -1,7 +1,8 @@
+<div class="movie-list">
 <div *ngFor="let movie of movies" class="movie-item">
   <app-movie-item 
   [movie]="movie" 
   (movieSelected)="onMovieSelected($event)">
 </app-movie-item>
+</div><p class="select-movie" *ngIf="selectedMovie">Película Selaccionada: {{ selectedMovie.title }}</p>
 </div>
-<p>Selected Movie: {{ selectedMovie }}</p>

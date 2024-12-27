@@ -13,7 +13,8 @@ export class MovieItemComponent {
   @Input() movie!: Movie;
   @Output() movieSelected=new EventEmitter<string>(); 
   
-  selectMovie(){
-    this.movieSelected.emit (this.movie.title);
+  selectMovie(): void {
+    console.log('Película Seleccionada:', this.movie.title);
+    this.movieSelected.emit(this.movie.title);
   }
 }

@@ -25,7 +25,7 @@ export class MovieListComponent {
 
   selectedMovie: Movie = {title:'',year:0, description:''};
 
-  onMovieSelected(movieTitle: string) {
+  onMovieSelected(movieTitle: string): void  {
     this.selectedMovie.title = movieTitle;
   }
 }
