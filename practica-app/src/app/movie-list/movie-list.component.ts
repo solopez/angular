@@ -18,7 +18,7 @@ export class MovieListComponent {
     { title: "Inception", year: 2010, description: "A thief enters dreams to plant ideas in a CEO's mind." },
     { title: "The Matrix", year: 1999, description: "A hacker learns the truth about his reality and fights its controllers." },
     { title: "Pulp Fiction", year: 1994, description: "Mobsters' lives intertwine in a series of violent events." },
-    { title: "The Fellowship of the Ring", year: 2001, description: "A hobbit begins a journey to destroy a powerful ring." },
+    { title: "Titanic", year: 1997, description: "A love story unfolds aboard the ill-fated RMS Titanic." },
     { title: "Interstellar", year: 2014, description: "Explorers travel through a wormhole to save humanity." },
     { title: "Fight Club", year: 1999, description: "Two men form a fight club that evolves into something larger." }
   ];

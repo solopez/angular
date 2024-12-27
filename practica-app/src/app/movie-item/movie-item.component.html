@@ -1,6 +1,8 @@
 <div class="movie-card">
-  <h2>{{ movie.title }}</h2>
+<div class="card">
+  <h3>{{ movie.title }}</h3>
   <p><strong>Año:</strong> {{ movie.year }}</p>
   <p *ngIf="movie.description"><strong>Descripción:</strong> {{ movie.description }}</p>
+</div>
   <button (click)="selectMovie()">Seleccionar</button>
 </div>

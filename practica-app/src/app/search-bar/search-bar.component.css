@@ -1,0 +1,19 @@
+.buscador {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  background-color: rgba(205, 205, 205, 0.917);
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 16px;
+  color: rgb(70, 70, 70);
+}
+
+.buscador:focus {
+  border-color: #05533c;
+}
+.contenedor-buscador {
+  float: right;
+  margin-top: 5px;
+}

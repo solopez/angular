@@ -5,9 +5,10 @@ import { Ej4Component } from './ej4/ej4.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MovieListComponent } from "./movie-list/movie-list.component";
+import { SearchBarComponent } from "./search-bar/search-bar.component";
 @Component({
   selector: 'app-root',
-  imports: [Ej2Component, Ej3Component, Ej4Component, HeaderComponent, FooterComponent, MovieListComponent],
+  imports: [HeaderComponent, FooterComponent, MovieListComponent, SearchBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
