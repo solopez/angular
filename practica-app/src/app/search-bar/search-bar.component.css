@@ -14,6 +14,6 @@
   border-color: #05533c;
 }
 .contenedor-buscador {
-  float: right;
   margin-top: 5px;
+  text-align: center;
 }
