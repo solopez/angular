@@ -1,0 +1,10 @@
+<div *ngIf="episodes.length > 0; else noEpisodes">
+  <h2>Episodes List</h2>
+  <ul>
+    <li *ngFor="let episode of episodes">{{ episode.Title }}</li>
+  </ul>
+</div>
+
+<ng-template #noEpisodes>
+  <p>No episodes found.</p>
+</ng-template>

@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Movie } from './movie';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +21,14 @@ export class MovieService {
     { title: "Fight Club", year: 1999, description: "Two men form a fight club that evolves into something larger." }
   ];
 
+  constructor(private  http:  HttpClient) {}
+
+
   getMovie() {
     return this.movies;
    }
+
+   getEpisodes(): Observable<{Episodes: []}>{
+    return  this.http.get<{Episodes: []}>('https://www.omdbapi.com/?apikey=2ff6c6e4&t=From&Season=1')
+    } 
 }
