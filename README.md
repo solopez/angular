@@ -70,18 +70,20 @@ Objetivo:
 Crear dos componentes (MovieListComponent como padre y MovieItemComponent como hijo) que se comuniquen utilizando @Input y @Output.
 
 Pasos:
-Configuración del componente padre MovieListComponent:
-Archivo TS (movie-list.component.ts):
 
+Configuración del componente padre MovieListComponent:
+
+Archivo TS (movie-list.component.ts):
 Declarar una lista de 10 objetos movies, donde cada objeto tenga las propiedades title, year, y description.
 Crear una variable selectedMovie para almacenar la película seleccionada.
 Crear un método onMovieSelected(movieTitle: string) que asigne el valor recibido a la variable selectedMovie.
-Archivo HTML (movie-list.component.html):
 
+Archivo HTML (movie-list.component.html):
 Usar *ngFor para iterar sobre la lista de películas.
 Para cada película, incluir el selector del componente hijo <app-movie-item> y pasarle los datos de la película mediante property binding con [movie]="movie".
 Escuchar el evento emitido por el hijo con event binding, ej.: (movieSelected)="onMovieSelected($event)".
 Mostrar en un <p> la película seleccionada interpolando la variable selectedMovie.
+
 Configuración del componente hijo MovieItemComponent:
 Archivo TS (movie-item.component.ts):
 
